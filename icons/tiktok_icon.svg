@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    
+  </defs>
+  <g class="tt">
+    <circle cx="24" cy="24" r="22" fill="rgba(127,255,0,.08)" stroke="#7fff00" stroke-width="1.2"></circle>
+    <path d="M32.5 19.8a8.5 8.5 0 0 1-5-1.6v8.6a6.4 6.4 0 1 1-6.4-6.4c.3 0 .6 0 .9.1v3.4a3 3 0 1 0 2 2.9V12h3.3a5.3 5.3 0 0 0 5.2 5.3v2.5z" fill="#7fff00"></path>
+  </g>
+</svg>

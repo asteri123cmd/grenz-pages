@@ -1,0 +1,27 @@
+{
+  "name": "GRENZ Serwis",
+  "short_name": "GRENZ",
+  "description": "Profesjonalny serwis hulajnóg i rowerów elektrycznych w Warszawie",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07100a",
+  "theme_color": "#7fff00",
+  "lang": "pl",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "transportation", "utilities"]
+}
