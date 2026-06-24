@@ -1,2 +1,268 @@
+/* ===================================================
+   GRENZ — i18n Translations  (PL | EN | RU)
+   =================================================== */
+const i18n = {
+  pl: {
+    nav: {
+      services:'Usługi', about:'O Nas', faq:'FAQ', contact:'Kontakt',
+      cta:'Umów Naprawę', services_page:'Wszystkie Usługi'
+    },
+    hero: [
+      { badge:'Serwis Elektryczny · Warszawa', title:'Twój Serwis\nHulajnóg Elektrycznych', hl:'w Warszawie', sub:'Profesjonalna naprawa i diagnostyka elektrycznych środków transportu. Szybko, rzetelnie, z gwarancją.' },
+      { badge:'Rowery Elektryczne', title:'Naprawa Rowerów\nElektrycznych', hl:'Każdej Marki', sub:'Serwisujemy Bosch, Shimano, Bafang, Yamaha i wiele innych. Diagnostyka, wymiana baterii, regeneracja napędu.' },
+      { badge:'Diagnostyka Elektroniczna', title:'Precyzyjna\nDiagnostyka', hl:'Usterek', sub:'Zaawansowany sprzęt diagnostyczny do każdego modelu. Błędy BMS, sterowniki, silniki — znajdziemy każdą usterkę.' },
+      { badge:'Serwis Baterii', title:'Naprawa i Regeneracja\nBaterii', hl:'Li-Ion', sub:'Oryginalne ogniwa, balansowanie pakietu, wymiana BMS. Przywracamy 90–95% pierwotnej pojemności.' },
+      { badge:'Części i Akcesoria', title:'Części Oryginalne\nNa Miejscu', hl:'Wysoka Jakość', sub:'Bogaty wybór oryginalnych i zamiennych części. Szybka realizacja — większość napraw w 1–3 dni robocze.' }
+    ],
+    cta_main:'Umów Naprawę', cta_call:'Zadzwoń Teraz',
+    stats: [
+      { num:'500+', label:'Zadowolonych Klientów' },
+      { num:'1500+', label:'Naprawionych Urządzeń' },
+      { num:'5', label:'Lat Doświadczenia' },
+      { num:'98%', label:'Wskaźnik Satysfakcji' }
+    ],
+    services_title:'Nasze Usługi', services_sub:'Profesjonalny serwis elektryczny w samym sercu Warszawy.',
+    services: [
+      { title:'Naprawa Elektryczna', sub:'Hulajnogi & Rowery', desc:'Kompleksowa naprawa wszystkich typów elektrycznych środków transportu. Silniki, układy hamulcowe, elektronika, oświetlenie, zawieszenie — diagnozujemy i naprawiamy każdą usterkę.', link:'Szczegóły usługi', price:'od 50 zł' },
+      { title:'Diagnostyka Elektroniczna', sub:'Błędy & Sterowniki', desc:'Profesjonalna analiza błędów sterownika, systemu BMS i elektroniki. Używamy specjalistycznego oprogramowania kompatybilnego z wszystkimi popularnymi markami.', link:'Szczegóły usługi', price:'od 50 zł' },
+      { title:'Serwis Baterii', sub:'Li-Ion & LiFePO4', desc:'Naprawa, regeneracja i wymiana pakietów bateryjnych. Balansowanie ogniw, wymiana modułu BMS, testowanie pojemności i napięcia każdej celi.', link:'Szczegóły usługi', price:'od 150 zł' },
+      { title:'Tuning i Modyfikacje', sub:'Wydajność & Styl', desc:'Zwiększenie zasięgu, mocy i prędkości. Instalacja dodatkowego oświetlenia, amortyzatorów, opon terenowych. Personalizacja wyglądu według życzenia klienta.', link:'Szczegóły usługi', price:'od 80 zł' }
+    ],
+    why_title:'Dlaczego My?', why_sub:'Ponad 5 lat doświadczenia w serwisowaniu elektrycznych środków transportu.',
+    why: [
+      { icon:'🛡️', title:'Gwarancja 6 Miesięcy', desc:'Na wszystkie naprawy i wymienione części udzielamy pisemnej gwarancji.' },
+      { icon:'🔩', title:'Oryginalne Części', desc:'Używamy wyłącznie certyfikowanych komponentów od sprawdzonych dostawców.' },
+      { icon:'⚡', title:'Ekspresowa Realizacja', desc:'Większość napraw wykonujemy w ciągu 1–3 dni roboczych. Dostępna usługa ekspresowa.' },
+      { icon:'👨‍🔧', title:'Certyfikowani Technicy', desc:'Nasz zespół posiada certyfikaty producentów i stale podnosi kwalifikacje.' },
+      { icon:'💰', title:'Uczciwe Ceny', desc:'Zawsze wyceniamy naprawę przed przystąpieniem do pracy. Żadnych ukrytych kosztów.' }
+    ],
+    ba_title:'Efekty Naszej Pracy', ba_sub:'Przywracamy urządzenia do pełnej sprawności — jak nowe.',
+    ba_before:'PRZED', ba_after:'PO',
+    market_title:'Rynek E-Mobilności w Polsce Rośnie', market_sub:'Liczba elektrycznych pojazdów osobistych w Polsce rośnie o blisko 40% rocznie. Profesjonalny serwis staje się kluczowy.',
+    market_chart_title:'Zarejestrowane e-pojazdy w Polsce (tys.)',
+    market_stats: [
+      { num:'40%', title:'Roczny wzrost rynku', desc:'E-pojazdy to jeden z najszybciej rosnących segmentów transportu w Polsce.' },
+      { num:'2M+', title:'Użytkowników w Polsce', desc:'Szacunkowa liczba użytkowników hulajnóg i rowerów elektrycznych w 2024 roku.' },
+      { num:'73%', title:'Potrzebuje naprawy', desc:'Co trzeci e-pojazd wymaga serwisu w ciągu pierwszych 18 miesięcy użytkowania.' }
+    ],
+    process_title:'Jak Działamy?', process_sub:'Prosta, przejrzysta procedura — od kontaktu do odbioru.',
+    process: [
+      { num:'01', title:'Kontakt i Wycena', desc:'Zadzwoń, napisz na WhatsApp lub Telegram. Opisz problem i otrzymaj bezpłatną wycenę w 30 minut.' },
+      { num:'02', title:'Diagnostyka', desc:'Precyzyjna diagnostyka w naszym warsztacie z użyciem profesjonalnych narzędzi i oprogramowania.' },
+      { num:'03', title:'Naprawa i Odbiór', desc:'Naprawa przez certyfikowanego technika, testy końcowe, pisemna gwarancja i zwrot sprawnego urządzenia.' }
+    ],
+    reviews_title:'Opinie Klientów', reviews_sub:'Sprawdź co mówią nasi klienci — ponad 150 opinii w Google Maps.',
+    reviews_link:'Wszystkie opinie w Google',
+    reviews: [
+      { text:'Ekspresowa naprawa Xiaomi Pro 2 — padł kontroler. W ciągu 2 dni hulajnoga jak nowa. Uczciwa cena, profesjonalna obsługa. Polecam!', name:'Marcin K.', rating:5 },
+      { text:'Serwis baterii w moim e-rowerze Bosch. Regeneracja przywróciła prawie pełną pojemność za ułamek ceny nowej baterii. Super robota!', name:'Anna W.', rating:5 },
+      { text:'Diagnostyka pokazała problem ze sterownikiem BMS. Naprawili w 3 dni. Komunikatywni, rzetelni, ceny adekwatne do jakości. Wrócę!', name:'Piotr S.', rating:5 }
+    ],
+    faq_title:'Często Zadawane Pytania', faq_sub:'Masz inne pytanie? Napisz do nas — odpowiemy w ciągu godziny.',
+    faq: [
+      { q:'Jak długo trwa naprawa?', a:'Większość napraw realizujemy w ciągu 1–3 dni roboczych. Przy złożonych usterkach lub braku części — do 5–7 dni. Usługa ekspresowa (24h) dostępna na życzenie za dopłatą.' },
+      { q:'Czy naprawiacie wszystkie marki hulajnóg i e-rowerów?', a:'Tak! Serwisujemy Xiaomi, Segway-Ninebot, Kaabo, Dualtron, Vsett, Pure Electric, Razor (hulajnogi) oraz Bosch, Shimano, Bafang, Yamaha i inne systemy napędowe (rowery elektryczne).' },
+      { q:'Czy dajecie gwarancję na naprawę?', a:'Tak — na wszystkie naprawy i wymienione części udzielamy 6-miesięcznej pisemnej gwarancji. W razie usterki w tym czasie naprawa jest bezpłatna.' },
+      { q:'Jakie są koszty naprawy?', a:'Diagnostyka i drobne naprawy od 50 zł. Regeneracja baterii od 150 zł, wymiana pakietu od 300 zł. Bardziej złożone prace wyceniamy po bezpłatnej diagnostyce — zawsze przed przystąpieniem do pracy.' },
+      { q:'Co to jest regeneracja baterii?', a:'Regeneracja to wymiana uszkodzonych ogniw litowych przy zachowaniu oryginalnej obudowy i BMS. Koszt wynosi 30–50% ceny nowej baterii, a pojemność wraca do 90–95% wartości fabrycznej.' },
+      { q:'Jak umówić wizytę?', a:'Zadzwoń pod +48 515 430 479, napisz na WhatsApp lub Telegram — lub użyj przycisku ⚡ w prawym dolnym rogu strony. Jesteśmy czynni Pn–Sb 9:00–19:00.' },
+      { q:'Czy przyjmujecie bez wcześniejszej rezerwacji?', a:'Tak, walk-in jest możliwy. Jednak zalecamy kontakt wcześniej, by uniknąć oczekiwania — szczególnie w szczycie sezonu (wiosna/lato). Diagnostyka wstępna zawsze bezpłatna.' },
+      { q:'Czy możliwa jest naprawa w domu (mobilny serwis)?', a:'W wybranych przypadkach (np. hulajnoga nie jedzie) oferujemy odbiór urządzenia z miejsca wskazanego przez klienta na terenie Warszawy. Skontaktuj się, by uzgodnić szczegóły.' }
+    ],
+    contact_title:'Kontakt i Lokalizacja', contact_sub:'Jesteśmy w centrum Warszawy — zapraszamy do warsztatu!',
+    contact_address:'Adres', contact_addr_val:'ul. Ciołka 35/84, 01-445 Warszawa',
+    contact_phone:'Telefon / WhatsApp / Telegram', contact_hours:'Godziny Pracy',
+    contact_hours_val:'Pn – Pt: 9:00 – 19:00\nSobota: 10:00 – 17:00',
+    contact_map:'Otwórz w Google Maps', contact_social:'Media Społecznościowe',
+    footer_desc:'Profesjonalny serwis hulajnóg i rowerów elektrycznych w Warszawie. Szybko, rzetelnie, z gwarancją.',
+    footer_links:'Nawigacja', footer_services_title:'Usługi', footer_contact_title:'Kontakt',
+    footer_links_list:['Strona Główna','Usługi','FAQ','Kontakt'],
+    footer_services_list:['Naprawa Elektryczna','Diagnostyka','Serwis Baterii','Tuning'],
+    footer_rights:'© 2024 GRENZ Serwis. Wszelkie prawa zastrzeżone.',
+    footer_terms:'Regulamin', footer_privacy:'Polityka Prywatności', footer_cookie:'Cookies',
+    cookie_text:'Ta strona używa plików cookie, aby zapewnić najlepsze doświadczenie. Kontynuując, akceptujesz naszą',
+    cookie_policy:'Politykę Cookies', cookie_accept:'Akceptuję', cookie_decline:'Odrzuć',
+    services_page_title:'Nasze Usługi', services_page_sub:'Pełna oferta serwisowa dla elektrycznych środków transportu.',
+    badges: { services:'Usługi', about:'O Nas', realizations:'Realizacje', market:'Rynek', process:'Jak działamy', reviews:'Opinie', faq:'FAQ', contact:'Kontakt' },
+  },
 
-const i18n={pl:{nav:{services:'Usługi',about:'O Nas',faq:'FAQ',contact:'Kontakt',cta:'Umów Naprawę',services_page:'Wszystkie Usługi'},hero:[{badge:'Serwis Elektryczny · Warszawa',title:'Twój Serwis\nHulajnóg Elektrycznych',hl:'w Warszawie',sub:'Profesjonalna naprawa i diagnostyka elektrycznych środków transportu. Szybko,rzetelnie,z gwarancją.'},{badge:'Rowery Elektryczne',title:'Naprawa Rowerów\nElektrycznych',hl:'Każdej Marki',sub:'Serwisujemy Bosch,Shimano,Bafang,Yamaha i wiele innych. Diagnostyka,wymiana baterii,regeneracja napędu.'},{badge:'Diagnostyka Elektroniczna',title:'Precyzyjna\nDiagnostyka',hl:'Usterek',sub:'Zaawansowany sprzęt diagnostyczny do każdego modelu. Błędy BMS,sterowniki,silniki — znajdziemy każdą usterkę.'},{badge:'Serwis Baterii',title:'Naprawa i Regeneracja\nBaterii',hl:'Li-Ion',sub:'Oryginalne ogniwa,balansowanie pakietu,wymiana BMS. Przywracamy 90–95% pierwotnej pojemności.'},{badge:'Części i Akcesoria',title:'Części Oryginalne\nNa Miejscu',hl:'Wysoka Jakość',sub:'Bogaty wybór oryginalnych i zamiennych części. Szybka realizacja — większość napraw w 1–3 dni robocze.'}],cta_main:'Umów Naprawę',cta_call:'Zadzwoń Teraz',stats:[{num:'500+',label:'Zadowolonych Klientów'},{num:'1500+',label:'Naprawionych Urządzeń'},{num:'5',label:'Lat Doświadczenia'},{num:'98%',label:'Wskaźnik Satysfakcji'}],services_title:'Nasze Usługi',services_sub:'Profesjonalny serwis elektryczny w samym sercu Warszawy.',services:[{title:'Naprawa Elektryczna',sub:'Hulajnogi & Rowery',desc:'Kompleksowa naprawa wszystkich typów elektrycznych środków transportu. Silniki,układy hamulcowe,elektronika,oświetlenie,zawieszenie — diagnozujemy i naprawiamy każdą usterkę.',link:'Szczegóły usługi',price:'od 50 zł'},{title:'Diagnostyka Elektroniczna',sub:'Błędy & Sterowniki',desc:'Profesjonalna analiza błędów sterownika,systemu BMS i elektroniki. Używamy specjalistycznego oprogramowania kompatybilnego z wszystkimi popularnymi markami.',link:'Szczegóły usługi',price:'od 50 zł'},{title:'Serwis Baterii',sub:'Li-Ion & LiFePO4',desc:'Naprawa,regeneracja i wymiana pakietów bateryjnych. Balansowanie ogniw,wymiana modułu BMS,testowanie pojemności i napięcia każdej celi.',link:'Szczegóły usługi',price:'od 150 zł'},{title:'Tuning i Modyfikacje',sub:'Wydajność & Styl',desc:'Zwiększenie zasięgu,mocy i prędkości. Instalacja dodatkowego oświetlenia,amortyzatorów,opon terenowych. Personalizacja wyglądu według życzenia klienta.',link:'Szczegóły usługi',price:'od 80 zł'}],why_title:'Dlaczego My?',why_sub:'Ponad 5 lat doświadczenia w serwisowaniu elektrycznych środków transportu.',why:[{icon:'🛡️',title:'Gwarancja 6 Miesięcy',desc:'Na wszystkie naprawy i wymienione części udzielamy pisemnej gwarancji.'},{icon:'🔩',title:'Oryginalne Części',desc:'Używamy wyłącznie certyfikowanych komponentów od sprawdzonych dostawców.'},{icon:'⚡',title:'Ekspresowa Realizacja',desc:'Większość napraw wykonujemy w ciągu 1–3 dni roboczych. Dostępna usługa ekspresowa.'},{icon:'👨‍🔧',title:'Certyfikowani Technicy',desc:'Nasz zespół posiada certyfikaty producentów i stale podnosi kwalifikacje.'},{icon:'💰',title:'Uczciwe Ceny',desc:'Zawsze wyceniamy naprawę przed przystąpieniem do pracy. Żadnych ukrytych kosztów.'}],ba_title:'Efekty Naszej Pracy',ba_sub:'Przywracamy urządzenia do pełnej sprawności — jak nowe.',ba_before:'PRZED',ba_after:'PO',market_title:'Rynek E-Mobilności w Polsce Rośnie',market_sub:'Liczba elektrycznych pojazdów osobistych w Polsce rośnie o blisko 40% rocznie. Profesjonalny serwis staje się kluczowy.',market_chart_title:'Zarejestrowane e-pojazdy w Polsce(tys.)',market_stats:[{num:'40%',title:'Roczny wzrost rynku',desc:'E-pojazdy to jeden z najszybciej rosnących segmentów transportu w Polsce.'},{num:'2M+',title:'Użytkowników w Polsce',desc:'Szacunkowa liczba użytkowników hulajnóg i rowerów elektrycznych w 2024 roku.'},{num:'73%',title:'Potrzebuje naprawy',desc:'Co trzeci e-pojazd wymaga serwisu w ciągu pierwszych 18 miesięcy użytkowania.'}],process_title:'Jak Działamy?',process_sub:'Prosta,przejrzysta procedura — od kontaktu do odbioru.',process:[{num:'01',title:'Kontakt i Wycena',desc:'Zadzwoń,napisz na WhatsApp lub Telegram. Opisz problem i otrzymaj bezpłatną wycenę w 30 minut.'},{num:'02',title:'Diagnostyka',desc:'Precyzyjna diagnostyka w naszym warsztacie z użyciem profesjonalnych narzędzi i oprogramowania.'},{num:'03',title:'Naprawa i Odbiór',desc:'Naprawa przez certyfikowanego technika,testy końcowe,pisemna gwarancja i zwrot sprawnego urządzenia.'}],reviews_title:'Opinie Klientów',reviews_sub:'Sprawdź co mówią nasi klienci — ponad 150 opinii w Google Maps.',reviews_link:'Wszystkie opinie w Google',reviews:[{text:'Ekspresowa naprawa Xiaomi Pro 2 — padł kontroler. W ciągu 2 dni hulajnoga jak nowa. Uczciwa cena,profesjonalna obsługa. Polecam!',name:'Marcin K.',rating:5},{text:'Serwis baterii w moim e-rowerze Bosch. Regeneracja przywróciła prawie pełną pojemność za ułamek ceny nowej baterii. Super robota!',name:'Anna W.',rating:5},{text:'Diagnostyka pokazała problem ze sterownikiem BMS. Naprawili w 3 dni. Komunikatywni,rzetelni,ceny adekwatne do jakości. Wrócę!',name:'Piotr S.',rating:5}],faq_title:'Często Zadawane Pytania',faq_sub:'Masz inne pytanie? Napisz do nas — odpowiemy w ciągu godziny.',faq:[{q:'Jak długo trwa naprawa?',a:'Większość napraw realizujemy w ciągu 1–3 dni roboczych. Przy złożonych usterkach lub braku części — do 5–7 dni. Usługa ekspresowa(24h)dostępna na życzenie za dopłatą.'},{q:'Czy naprawiacie wszystkie marki hulajnóg i e-rowerów?',a:'Tak! Serwisujemy Xiaomi,Segway-Ninebot,Kaabo,Dualtron,Vsett,Pure Electric,Razor(hulajnogi)oraz Bosch,Shimano,Bafang,Yamaha i inne systemy napędowe(rowery elektryczne).'},{q:'Czy dajecie gwarancję na naprawę?',a:'Tak — na wszystkie naprawy i wymienione części udzielamy 6-miesięcznej pisemnej gwarancji. W razie usterki w tym czasie naprawa jest bezpłatna.'},{q:'Jakie są koszty naprawy?',a:'Diagnostyka i drobne naprawy od 50 zł. Regeneracja baterii od 150 zł,wymiana pakietu od 300 zł. Bardziej złożone prace wyceniamy po bezpłatnej diagnostyce — zawsze przed przystąpieniem do pracy.'},{q:'Co to jest regeneracja baterii?',a:'Regeneracja to wymiana uszkodzonych ogniw litowych przy zachowaniu oryginalnej obudowy i BMS. Koszt wynosi 30–50% ceny nowej baterii,a pojemność wraca do 90–95% wartości fabrycznej.'},{q:'Jak umówić wizytę?',a:'Zadzwoń pod +48 515 430 479,napisz na WhatsApp lub Telegram — lub użyj przycisku ⚡ w prawym dolnym rogu strony. Jesteśmy czynni Pn–Sb 9:00–19:00.'},{q:'Czy przyjmujecie bez wcześniejszej rezerwacji?',a:'Tak,walk-in jest możliwy. Jednak zalecamy kontakt wcześniej,by uniknąć oczekiwania — szczególnie w szczycie sezonu(wiosna/lato). Diagnostyka wstępna zawsze bezpłatna.'},{q:'Czy możliwa jest naprawa w domu(mobilny serwis)?',a:'W wybranych przypadkach(np. hulajnoga nie jedzie)oferujemy odbiór urządzenia z miejsca wskazanego przez klienta na terenie Warszawy. Skontaktuj się,by uzgodnić szczegóły.'}],contact_title:'Kontakt i Lokalizacja',contact_sub:'Jesteśmy w centrum Warszawy — zapraszamy do warsztatu!',contact_address:'Adres',contact_addr_val:'ul. Ciołka 35/84,01-445 Warszawa',contact_phone:'Telefon / WhatsApp / Telegram',contact_hours:'Godziny Pracy',contact_hours_val:'Pn – Pt:9:00 – 19:00\nSobota:10:00 – 17:00',contact_map:'Otwórz w Google Maps',contact_social:'Media Społecznościowe',footer_desc:'Profesjonalny serwis hulajnóg i rowerów elektrycznych w Warszawie. Szybko,rzetelnie,z gwarancją.',footer_links:'Nawigacja',footer_services_title:'Usługi',footer_contact_title:'Kontakt',footer_links_list:['Strona Główna','Usługi','FAQ','Kontakt'],footer_services_list:['Naprawa Elektryczna','Diagnostyka','Serwis Baterii','Tuning'],footer_rights:'© 2024 GRENZ Serwis. Wszelkie prawa zastrzeżone.',footer_terms:'Regulamin',footer_privacy:'Polityka Prywatności',footer_cookie:'Cookies',cookie_text:'Ta strona używa plików cookie,aby zapewnić najlepsze doświadczenie. Kontynuując,akceptujesz naszą',cookie_policy:'Politykę Cookies',cookie_accept:'Akceptuję',cookie_decline:'Odrzuć',services_page_title:'Nasze Usługi',services_page_sub:'Pełna oferta serwisowa dla elektrycznych środków transportu.',badges:{services:'Usługi',about:'O Nas',realizations:'Realizacje',market:'Rynek',process:'Jak działamy',reviews:'Opinie',faq:'FAQ',contact:'Kontakt'},},en:{nav:{services:'Services',about:'About',faq:'FAQ',contact:'Contact',cta:'Book a Repair',services_page:'All Services'},hero:[{badge:'Electric Service · Warsaw',title:'Your E-Scooter\nRepair Workshop',hl:'in Warsaw',sub:'Professional repair and diagnostics for electric personal transport. Fast,reliable,with warranty.'},{badge:'Electric Bikes',title:'E-Bike Repair\nService',hl:'All Brands',sub:'We service Bosch,Shimano,Bafang,Yamaha and more. Diagnostics,battery replacement,drive regeneration.'},{badge:'Electronic Diagnostics',title:'Precise\nFault Diagnostics',hl:'& Repair',sub:'Advanced diagnostic equipment for every model. BMS errors,controllers,motors — we find every fault.'},{badge:'Battery Service',title:'Battery Repair\n& Regeneration',hl:'Li-Ion',sub:'Original cells,pack balancing,BMS replacement. We restore 90–95% of original capacity.'},{badge:'Parts & Accessories',title:'Original Parts\nIn Stock',hl:'High Quality',sub:'Wide selection of original and OEM parts. Fast service — most repairs completed in 1–3 working days.'}],cta_main:'Book a Repair',cta_call:'Call Now',stats:[{num:'500+',label:'Happy Clients'},{num:'1500+',label:'Devices Repaired'},{num:'5',label:'Years Experience'},{num:'98%',label:'Satisfaction Rate'}],services_title:'Our Services',services_sub:'Professional electric service in the heart of Warsaw.',services:[{title:'Electric Repair',sub:'Scooters & E-Bikes',desc:'Comprehensive repair of all types of electric personal transport. Motors,braking systems,electronics,lighting,suspension — we diagnose and fix every fault.',link:'Service details',price:'from 50 PLN'},{title:'Electronic Diagnostics',sub:'Errors & Controllers',desc:'Professional analysis of controller errors,BMS system and electronics. We use specialist software compatible with all popular brands.',link:'Service details',price:'from 50 PLN'},{title:'Battery Service',sub:'Li-Ion & LiFePO4',desc:'Battery pack repair,regeneration and replacement. Cell balancing,BMS module replacement,capacity and voltage testing of each cell.',link:'Service details',price:'from 150 PLN'},{title:'Tuning & Modifications',sub:'Performance & Style',desc:'Increase range,power and speed. Additional lighting,shock absorbers,off-road tyres. Appearance customization on request.',link:'Service details',price:'from 80 PLN'}],why_title:'Why Choose Us?',why_sub:'Over 5 years of experience servicing electric personal transport.',why:[{icon:'🛡️',title:'6-Month Warranty',desc:'We provide a written warranty on all repairs and replaced parts.'},{icon:'🔩',title:'Original Parts',desc:'We use only certified components from verified suppliers.'},{icon:'⚡',title:'Express Service',desc:'Most repairs done in 1–3 working days. Express 24h service available.'},{icon:'👨‍🔧',title:'Certified Technicians',desc:'Our team holds manufacturer certifications and continuously trains.'},{icon:'💰',title:'Fair Prices',desc:'We always quote before starting work. No hidden charges,ever.'}],ba_title:'Before & After',ba_sub:'We restore devices to full working order — like new.',ba_before:'BEFORE',ba_after:'AFTER',market_title:'E-Mobility Market in Poland Is Growing',market_sub:'The number of personal electric vehicles in Poland grows by nearly 40% per year. Professional service is becoming essential.',market_chart_title:'Registered e-vehicles in Poland(thousands)',market_stats:[{num:'40%',title:'Annual market growth',desc:'E-vehicles are one of the fastest growing transport segments in Poland.'},{num:'2M+',title:'Users in Poland',desc:'Estimated number of e-scooter and e-bike users in Poland in 2024.'},{num:'73%',title:'Need servicing',desc:'1 in 3 e-vehicles requires service within the first 18 months of use.'}],process_title:'How We Work',process_sub:'Simple,transparent process — from contact to collection.',process:[{num:'01',title:'Contact & Quote',desc:'Call,WhatsApp or Telegram us. Describe the problem and get a free quote within 30 minutes.'},{num:'02',title:'Diagnostics',desc:'Precise diagnostics at our workshop using professional tools and software.'},{num:'03',title:'Repair & Collection',desc:'Repair by a certified technician,final testing,written warranty and device returned to you.'}],reviews_title:'Client Reviews',reviews_sub:'See what our clients say — over 150 Google Maps reviews.',reviews_link:'All reviews on Google',reviews:[{text:'Express repair of my Xiaomi Pro 2 — dead controller. Back on the road in 2 days. Fair price,professional service. Highly recommended!',name:'Marcin K.',rating:5},{text:'Battery service on my Bosch e-bike. Regeneration brought back almost full capacity for a fraction of a new battery\'s price. Great work!',name:'Anna W.',rating:5},{text:'Diagnostics found a BMS controller issue. Fixed in 3 days. Great communication,reliable,price matches quality. Will be back!',name:'Piotr S.',rating:5}],faq_title:'Frequently Asked Questions',faq_sub:'More questions? Write to us — we reply within an hour.',faq:[{q:'How long does a repair take?',a:'Most repairs are completed in 1–3 working days. For complex faults or parts on order,up to 5–7 days. Express 24h service available on request for an additional fee.'},{q:'Do you repair all e-scooter and e-bike brands?',a:'Yes! We service Xiaomi,Segway-Ninebot,Kaabo,Dualtron,Vsett,Pure Electric,Razor(scooters)and Bosch,Shimano,Bafang,Yamaha and other drive systems(e-bikes).'},{q:'Do you provide a repair warranty?',a:'Yes — all repairs and replaced parts come with a 6-month written warranty. If a fault reoccurs within that time,the repair is free.'},{q:'What are the repair costs?',a:'Diagnostics and minor repairs from 50 PLN. Battery regeneration from 150 PLN,pack replacement from 300 PLN. Complex work is quoted after a free diagnostic — always before we start.'},{q:'What is battery regeneration?',a:'Regeneration means replacing damaged lithium cells while keeping the original casing and BMS. It costs 30–50% of a new battery and restores 90–95% of factory capacity.'},{q:'How do I book an appointment?',a:'Call +48 515 430 479,message via WhatsApp or Telegram — or use the ⚡ button in the bottom right corner. We are open Mon–Sat 9:00–19:00.'},{q:'Do you accept walk-in customers?',a:'Yes,walk-ins are welcome. However we recommend calling ahead to avoid waiting — especially during peak season(spring/summer). Initial diagnostics is always free.'},{q:'Is a mobile repair service available?',a:'In some cases(e.g. scooter won\'t move)we offer pickup from a Warsaw address. Contact us to arrange details.'}],contact_title:'Contact & Location',contact_sub:'We are in the centre of Warsaw — visit our workshop!',contact_address:'Address',contact_addr_val:'ul. Ciołka 35/84,01-445 Warsaw',contact_phone:'Phone / WhatsApp / Telegram',contact_hours:'Working Hours',contact_hours_val:'Mon – Fri:9:00 – 19:00\nSaturday:10:00 – 17:00',contact_map:'Open in Google Maps',contact_social:'Social Media',footer_desc:'Professional e-scooter and e-bike repair service in Warsaw. Fast,reliable,guaranteed.',footer_links:'Navigation',footer_services_title:'Services',footer_contact_title:'Contact',footer_links_list:['Home','Services','FAQ','Contact'],footer_services_list:['Electric Repair','Diagnostics','Battery Service','Tuning'],footer_rights:'© 2024 GRENZ Service. All rights reserved.',footer_terms:'Terms',footer_privacy:'Privacy Policy',footer_cookie:'Cookies',cookie_text:'This site uses cookies to provide the best experience. By continuing,you accept our',cookie_policy:'Cookie Policy',cookie_accept:'Accept',cookie_decline:'Decline',services_page_title:'Our Services',services_page_sub:'Full service offering for electric personal transport.',badges:{services:'Services',about:'About',realizations:'Realisations',market:'Market',process:'How we work',reviews:'Reviews',faq:'FAQ',contact:'Contact'},},ru:{nav:{services:'Услуги',about:'О Нас',faq:'FAQ',contact:'Контакт',cta:'Записаться',services_page:'Все Услуги'},hero:[{badge:'Электросервис · Варшава',title:'Сервис Электросамокатов\nи Электровелосипедов',hl:'в Варшаве',sub:'Профессиональный ремонт и диагностика электрического личного транспорта. Быстро,надёжно,с гарантией.'},{badge:'Электровелосипеды',title:'Ремонт Электро-\nвелосипедов',hl:'Любых Марок',sub:'Обслуживаем Bosch,Shimano,Bafang,Yamaha и другие. Диагностика,замена батареи,восстановление привода.'},{badge:'Электронная Диагностика',title:'Точная Диагностика\nНеисправностей',hl:'Любых Моделей',sub:'Передовое диагностическое оборудование для любой модели. Ошибки BMS,контроллеры,двигатели — найдём всё.'},{badge:'Сервис Батарей',title:'Ремонт и Восстановление\nАккумуляторов',hl:'Li-Ion',sub:'Оригинальные ячейки,балансировка пакета,замена BMS. Восстанавливаем 90–95% первоначальной ёмкости.'},{badge:'Запчасти и Аксессуары',title:'Оригинальные Запчасти\nВ Наличии',hl:'Высокое Качество',sub:'Широкий выбор оригинальных и OEM запчастей. Большинство ремонтов — за 1–3 рабочих дня.'}],cta_main:'Записаться на Ремонт',cta_call:'Позвонить',stats:[{num:'500+',label:'Довольных Клиентов'},{num:'1500+',label:'Отремонтированных Устройств'},{num:'5',label:'Лет Опыта'},{num:'98%',label:'Показатель Удовлетворённости'}],services_title:'Наши Услуги',services_sub:'Профессиональный электросервис в самом центре Варшавы.',services:[{title:'Электроремонт',sub:'Самокаты и Велосипеды',desc:'Комплексный ремонт всех видов электрического личного транспорта. Двигатели,тормозные системы,электроника,освещение,подвеска — диагностируем и устраняем любые неисправности.',link:'Подробнее',price:'от 50 зл'},{title:'Электронная Диагностика',sub:'Ошибки и Контроллеры',desc:'Профессиональный анализ ошибок контроллера,системы BMS и электроники. Используем специализированное ПО для всех популярных марок.',link:'Подробнее',price:'от 50 зл'},{title:'Сервис Батарей',sub:'Li-Ion и LiFePO4',desc:'Ремонт,восстановление и замена аккумуляторных блоков. Балансировка ячеек,замена BMS,тестирование ёмкости и напряжения каждой ячейки.',link:'Подробнее',price:'от 150 зл'},{title:'Тюнинг и Модификации',sub:'Мощность и Стиль',desc:'Увеличение дальности хода,мощности и скорости. Установка дополнительного освещения,амортизаторов,внедорожных шин. Кастомизация внешнего вида.',link:'Подробнее',price:'от 80 зл'}],why_title:'Почему Мы?',why_sub:'Более 5 лет опыта обслуживания электрического личного транспорта.',why:[{icon:'🛡️',title:'Гарантия 6 Месяцев',desc:'На все ремонты и замененные запчасти выдаём письменную гарантию.'},{icon:'🔩',title:'Оригинальные Запчасти',desc:'Используем только сертифицированные компоненты от проверенных поставщиков.'},{icon:'⚡',title:'Срочный Сервис',desc:'Большинство ремонтов — за 1–3 рабочих дня. Доступен срочный сервис 24ч.'},{icon:'👨‍🔧',title:'Сертифицированные Техники',desc:'Наша команда имеет сертификаты производителей и постоянно обучается.'},{icon:'💰',title:'Честные Цены',desc:'Всегда называем стоимость до начала работы. Никаких скрытых платежей.'}],ba_title:'До и После',ba_sub:'Возвращаем устройства в полностью рабочее состояние — как новые.',ba_before:'ДО',ba_after:'ПОСЛЕ',market_title:'Рынок Э-Мобильности в Польше Растёт',market_sub:'Количество личного электротранспорта в Польше растёт примерно на 40% в год. Профессиональный сервис становится необходимостью.',market_chart_title:'Зарегистрированные э-транспортные средства в Польше(тыс.)',market_stats:[{num:'40%',title:'Ежегодный рост рынка',desc:'Э-транспорт — один из самых быстрорастущих сегментов в Польше.'},{num:'2M+',title:'Пользователей в Польше',desc:'Оценочное число пользователей электросамокатов и велосипедов в 2024 году.'},{num:'73%',title:'Нуждаются в сервисе',desc:'Каждое третье устройство требует обслуживания в первые 18 месяцев.'}],process_title:'Как Мы Работаем',process_sub:'Простая,прозрачная процедура — от контакта до получения.',process:[{num:'01',title:'Контакт и Расчёт',desc:'Позвоните,напишите в WhatsApp или Telegram. Опишите проблему и получите бесплатную оценку за 30 минут.'},{num:'02',title:'Диагностика',desc:'Точная диагностика в нашей мастерской с использованием профессионального оборудования и ПО.'},{num:'03',title:'Ремонт и Получение',desc:'Ремонт сертифицированным техником,финальное тестирование,письменная гарантия и возврат устройства.'}],reviews_title:'Отзывы Клиентов',reviews_sub:'Читайте отзывы клиентов — более 150 оценок на Google Maps.',reviews_link:'Все отзывы в Google',reviews:[{text:'Срочный ремонт Xiaomi Pro 2 — сгорел контроллер. Через 2 дня самокат как новый. Честная цена,профессиональный сервис. Рекомендую!',name:'Марцин К.',rating:5},{text:'Сервис батареи электровелосипеда Bosch. Восстановление вернуло почти полную ёмкость за долю стоимости новой батареи. Отличная работа!',name:'Анна В.',rating:5},{text:'Диагностика обнаружила проблему с контроллером BMS. Исправили за 3 дня. Хорошая коммуникация,надёжно,цена соответствует качеству!',name:'Пётр С.',rating:5}],faq_title:'Частые Вопросы',faq_sub:'Есть другой вопрос? Напишите — ответим в течение часа.',faq:[{q:'Сколько времени занимает ремонт?',a:'Большинство ремонтов выполняется за 1–3 рабочих дня. При сложных неисправностях или заказе запчастей — до 5–7 дней. По запросу доступен срочный сервис 24ч за доплату.'},{q:'Вы ремонтируете все марки самокатов и электровелосипедов?',a:'Да! Обслуживаем Xiaomi,Segway-Ninebot,Kaabo,Dualtron,Vsett,Pure Electric,Razor(самокаты)и Bosch,Shimano,Bafang,Yamaha и другие приводные системы(электровелосипеды).'},{q:'Даёте ли гарантию на ремонт?',a:'Да — на все ремонты и замененные запчасти выдаём письменную гарантию на 6 месяцев. При неисправности в этот период ремонт бесплатный.'},{q:'Сколько стоит ремонт?',a:'Диагностика и мелкий ремонт от 50 злотых. Восстановление батареи от 150 злотых,замена блока от 300 злотых. Сложные работы оцениваются после бесплатной диагностики — всегда до начала работ.'},{q:'Что такое восстановление батареи?',a:'Восстановление — это замена повреждённых литиевых ячеек с сохранением оригинального корпуса и BMS. Стоит 30–50% от новой батареи и восстанавливает 90–95% заводской ёмкости.'},{q:'Как записаться?',a:'Позвоните +48 515 430 479,напишите в WhatsApp или Telegram — или используйте кнопку ⚡ в правом нижнем углу страницы. Работаем Пн–Сб 9:00–19:00.'},{q:'Принимаете ли без записи?',a:'Да,можно приехать без записи. Но рекомендуем позвонить заранее,чтобы избежать ожидания — особенно в пик сезона(весна/лето). Первичная диагностика всегда бесплатна.'},{q:'Возможен ли выездной ремонт?',a:'В отдельных случаях(например,самокат не едет)предлагаем забрать устройство по адресу в Варшаве. Свяжитесь с нами для уточнения деталей.'}],contact_title:'Контакты и Расположение',contact_sub:'Мы в центре Варшавы — приезжайте в мастерскую!',contact_address:'Адрес',contact_addr_val:'ул. Чёлка 35/84,01-445 Варшава',contact_phone:'Телефон / WhatsApp / Telegram',contact_hours:'Часы Работы',contact_hours_val:'Пн – Пт:9:00 – 19:00\nСуббота:10:00 – 17:00',contact_map:'Открыть в Google Maps',contact_social:'Социальные Сети',footer_desc:'Профессиональный сервис электросамокатов и электровелосипедов в Варшаве. Быстро,надёжно,с гарантией.',footer_links:'Навигация',footer_services_title:'Услуги',footer_contact_title:'Контакты',footer_links_list:['Главная','Услуги','FAQ','Контакт'],footer_services_list:['Электроремонт','Диагностика','Сервис Батарей','Тюнинг'],footer_rights:'© 2024 GRENZ Сервис. Все права защищены.',footer_terms:'Условия',footer_privacy:'Политика Конфиденц.',footer_cookie:'Cookies',cookie_text:'Этот сайт использует cookies для наилучшего опыта. Продолжая использование,вы принимаете нашу',cookie_policy:'Политику Cookies',cookie_accept:'Принять',cookie_decline:'Отклонить',services_page_title:'Наши Услуги',services_page_sub:'Полный спектр услуг для электрического личного транспорта.',badges:{services:'Услуги',about:'О Нас',realizations:'Работы',market:'Рынок',process:'Как работаем',reviews:'Отзывы',faq:'FAQ',contact:'Контакты'},}};const chartData=[{year:'2019',val:45,pct:5},{year:'2020',val:120,pct:13},{year:'2021',val:270,pct:28},{year:'2022',val:450,pct:47},{year:'2023',val:680,pct:72},{year:'2024',val:950,pct:100}];if(typeof module!=='undefined')module.exports={i18n,chartData};
+  en: {
+    nav: {
+      services:'Services', about:'About', faq:'FAQ', contact:'Contact',
+      cta:'Book a Repair', services_page:'All Services'
+    },
+    hero: [
+      { badge:'Electric Service · Warsaw', title:'Your E-Scooter\nRepair Workshop', hl:'in Warsaw', sub:'Professional repair and diagnostics for electric personal transport. Fast, reliable, with warranty.' },
+      { badge:'Electric Bikes', title:'E-Bike Repair\nService', hl:'All Brands', sub:'We service Bosch, Shimano, Bafang, Yamaha and more. Diagnostics, battery replacement, drive regeneration.' },
+      { badge:'Electronic Diagnostics', title:'Precise\nFault Diagnostics', hl:'& Repair', sub:'Advanced diagnostic equipment for every model. BMS errors, controllers, motors — we find every fault.' },
+      { badge:'Battery Service', title:'Battery Repair\n& Regeneration', hl:'Li-Ion', sub:'Original cells, pack balancing, BMS replacement. We restore 90–95% of original capacity.' },
+      { badge:'Parts & Accessories', title:'Original Parts\nIn Stock', hl:'High Quality', sub:'Wide selection of original and OEM parts. Fast service — most repairs completed in 1–3 working days.' }
+    ],
+    cta_main:'Book a Repair', cta_call:'Call Now',
+    stats: [
+      { num:'500+', label:'Happy Clients' },
+      { num:'1500+', label:'Devices Repaired' },
+      { num:'5', label:'Years Experience' },
+      { num:'98%', label:'Satisfaction Rate' }
+    ],
+    services_title:'Our Services', services_sub:'Professional electric service in the heart of Warsaw.',
+    services: [
+      { title:'Electric Repair', sub:'Scooters & E-Bikes', desc:'Comprehensive repair of all types of electric personal transport. Motors, braking systems, electronics, lighting, suspension — we diagnose and fix every fault.', link:'Service details', price:'from 50 PLN' },
+      { title:'Electronic Diagnostics', sub:'Errors & Controllers', desc:'Professional analysis of controller errors, BMS system and electronics. We use specialist software compatible with all popular brands.', link:'Service details', price:'from 50 PLN' },
+      { title:'Battery Service', sub:'Li-Ion & LiFePO4', desc:'Battery pack repair, regeneration and replacement. Cell balancing, BMS module replacement, capacity and voltage testing of each cell.', link:'Service details', price:'from 150 PLN' },
+      { title:'Tuning & Modifications', sub:'Performance & Style', desc:'Increase range, power and speed. Additional lighting, shock absorbers, off-road tyres. Appearance customization on request.', link:'Service details', price:'from 80 PLN' }
+    ],
+    why_title:'Why Choose Us?', why_sub:'Over 5 years of experience servicing electric personal transport.',
+    why: [
+      { icon:'🛡️', title:'6-Month Warranty', desc:'We provide a written warranty on all repairs and replaced parts.' },
+      { icon:'🔩', title:'Original Parts', desc:'We use only certified components from verified suppliers.' },
+      { icon:'⚡', title:'Express Service', desc:'Most repairs done in 1–3 working days. Express 24h service available.' },
+      { icon:'👨‍🔧', title:'Certified Technicians', desc:'Our team holds manufacturer certifications and continuously trains.' },
+      { icon:'💰', title:'Fair Prices', desc:'We always quote before starting work. No hidden charges, ever.' }
+    ],
+    ba_title:'Before & After', ba_sub:'We restore devices to full working order — like new.',
+    ba_before:'BEFORE', ba_after:'AFTER',
+    market_title:'E-Mobility Market in Poland Is Growing', market_sub:'The number of personal electric vehicles in Poland grows by nearly 40% per year. Professional service is becoming essential.',
+    market_chart_title:'Registered e-vehicles in Poland (thousands)',
+    market_stats: [
+      { num:'40%', title:'Annual market growth', desc:'E-vehicles are one of the fastest growing transport segments in Poland.' },
+      { num:'2M+', title:'Users in Poland', desc:'Estimated number of e-scooter and e-bike users in Poland in 2024.' },
+      { num:'73%', title:'Need servicing', desc:'1 in 3 e-vehicles requires service within the first 18 months of use.' }
+    ],
+    process_title:'How We Work', process_sub:'Simple, transparent process — from contact to collection.',
+    process: [
+      { num:'01', title:'Contact & Quote', desc:'Call, WhatsApp or Telegram us. Describe the problem and get a free quote within 30 minutes.' },
+      { num:'02', title:'Diagnostics', desc:'Precise diagnostics at our workshop using professional tools and software.' },
+      { num:'03', title:'Repair & Collection', desc:'Repair by a certified technician, final testing, written warranty and device returned to you.' }
+    ],
+    reviews_title:'Client Reviews', reviews_sub:'See what our clients say — over 150 Google Maps reviews.',
+    reviews_link:'All reviews on Google',
+    reviews: [
+      { text:'Express repair of my Xiaomi Pro 2 — dead controller. Back on the road in 2 days. Fair price, professional service. Highly recommended!', name:'Marcin K.', rating:5 },
+      { text:'Battery service on my Bosch e-bike. Regeneration brought back almost full capacity for a fraction of a new battery\'s price. Great work!', name:'Anna W.', rating:5 },
+      { text:'Diagnostics found a BMS controller issue. Fixed in 3 days. Great communication, reliable, price matches quality. Will be back!', name:'Piotr S.', rating:5 }
+    ],
+    faq_title:'Frequently Asked Questions', faq_sub:'More questions? Write to us — we reply within an hour.',
+    faq: [
+      { q:'How long does a repair take?', a:'Most repairs are completed in 1–3 working days. For complex faults or parts on order, up to 5–7 days. Express 24h service available on request for an additional fee.' },
+      { q:'Do you repair all e-scooter and e-bike brands?', a:'Yes! We service Xiaomi, Segway-Ninebot, Kaabo, Dualtron, Vsett, Pure Electric, Razor (scooters) and Bosch, Shimano, Bafang, Yamaha and other drive systems (e-bikes).' },
+      { q:'Do you provide a repair warranty?', a:'Yes — all repairs and replaced parts come with a 6-month written warranty. If a fault reoccurs within that time, the repair is free.' },
+      { q:'What are the repair costs?', a:'Diagnostics and minor repairs from 50 PLN. Battery regeneration from 150 PLN, pack replacement from 300 PLN. Complex work is quoted after a free diagnostic — always before we start.' },
+      { q:'What is battery regeneration?', a:'Regeneration means replacing damaged lithium cells while keeping the original casing and BMS. It costs 30–50% of a new battery and restores 90–95% of factory capacity.' },
+      { q:'How do I book an appointment?', a:'Call +48 515 430 479, message via WhatsApp or Telegram — or use the ⚡ button in the bottom right corner. We are open Mon–Sat 9:00–19:00.' },
+      { q:'Do you accept walk-in customers?', a:'Yes, walk-ins are welcome. However we recommend calling ahead to avoid waiting — especially during peak season (spring/summer). Initial diagnostics is always free.' },
+      { q:'Is a mobile repair service available?', a:'In some cases (e.g. scooter won\'t move) we offer pickup from a Warsaw address. Contact us to arrange details.' }
+    ],
+    contact_title:'Contact & Location', contact_sub:'We are in the centre of Warsaw — visit our workshop!',
+    contact_address:'Address', contact_addr_val:'ul. Ciołka 35/84, 01-445 Warsaw',
+    contact_phone:'Phone / WhatsApp / Telegram', contact_hours:'Working Hours',
+    contact_hours_val:'Mon – Fri: 9:00 – 19:00\nSaturday: 10:00 – 17:00',
+    contact_map:'Open in Google Maps', contact_social:'Social Media',
+    footer_desc:'Professional e-scooter and e-bike repair service in Warsaw. Fast, reliable, guaranteed.',
+    footer_links:'Navigation', footer_services_title:'Services', footer_contact_title:'Contact',
+    footer_links_list:['Home','Services','FAQ','Contact'],
+    footer_services_list:['Electric Repair','Diagnostics','Battery Service','Tuning'],
+    footer_rights:'© 2024 GRENZ Service. All rights reserved.',
+    footer_terms:'Terms', footer_privacy:'Privacy Policy', footer_cookie:'Cookies',
+    cookie_text:'This site uses cookies to provide the best experience. By continuing, you accept our',
+    cookie_policy:'Cookie Policy', cookie_accept:'Accept', cookie_decline:'Decline',
+    services_page_title:'Our Services', services_page_sub:'Full service offering for electric personal transport.',
+    badges: { services:'Services', about:'About', realizations:'Realisations', market:'Market', process:'How we work', reviews:'Reviews', faq:'FAQ', contact:'Contact' },
+  },
+
+  ru: {
+    nav: {
+      services:'Услуги', about:'О Нас', faq:'FAQ', contact:'Контакт',
+      cta:'Записаться', services_page:'Все Услуги'
+    },
+    hero: [
+      { badge:'Электросервис · Варшава', title:'Сервис Электросамокатов\nи Электровелосипедов', hl:'в Варшаве', sub:'Профессиональный ремонт и диагностика электрического личного транспорта. Быстро, надёжно, с гарантией.' },
+      { badge:'Электровелосипеды', title:'Ремонт Электро-\nвелосипедов', hl:'Любых Марок', sub:'Обслуживаем Bosch, Shimano, Bafang, Yamaha и другие. Диагностика, замена батареи, восстановление привода.' },
+      { badge:'Электронная Диагностика', title:'Точная Диагностика\nНеисправностей', hl:'Любых Моделей', sub:'Передовое диагностическое оборудование для любой модели. Ошибки BMS, контроллеры, двигатели — найдём всё.' },
+      { badge:'Сервис Батарей', title:'Ремонт и Восстановление\nАккумуляторов', hl:'Li-Ion', sub:'Оригинальные ячейки, балансировка пакета, замена BMS. Восстанавливаем 90–95% первоначальной ёмкости.' },
+      { badge:'Запчасти и Аксессуары', title:'Оригинальные Запчасти\nВ Наличии', hl:'Высокое Качество', sub:'Широкий выбор оригинальных и OEM запчастей. Большинство ремонтов — за 1–3 рабочих дня.' }
+    ],
+    cta_main:'Записаться на Ремонт', cta_call:'Позвонить',
+    stats: [
+      { num:'500+', label:'Довольных Клиентов' },
+      { num:'1500+', label:'Отремонтированных Устройств' },
+      { num:'5', label:'Лет Опыта' },
+      { num:'98%', label:'Показатель Удовлетворённости' }
+    ],
+    services_title:'Наши Услуги', services_sub:'Профессиональный электросервис в самом центре Варшавы.',
+    services: [
+      { title:'Электроремонт', sub:'Самокаты и Велосипеды', desc:'Комплексный ремонт всех видов электрического личного транспорта. Двигатели, тормозные системы, электроника, освещение, подвеска — диагностируем и устраняем любые неисправности.', link:'Подробнее', price:'от 50 зл' },
+      { title:'Электронная Диагностика', sub:'Ошибки и Контроллеры', desc:'Профессиональный анализ ошибок контроллера, системы BMS и электроники. Используем специализированное ПО для всех популярных марок.', link:'Подробнее', price:'от 50 зл' },
+      { title:'Сервис Батарей', sub:'Li-Ion и LiFePO4', desc:'Ремонт, восстановление и замена аккумуляторных блоков. Балансировка ячеек, замена BMS, тестирование ёмкости и напряжения каждой ячейки.', link:'Подробнее', price:'от 150 зл' },
+      { title:'Тюнинг и Модификации', sub:'Мощность и Стиль', desc:'Увеличение дальности хода, мощности и скорости. Установка дополнительного освещения, амортизаторов, внедорожных шин. Кастомизация внешнего вида.', link:'Подробнее', price:'от 80 зл' }
+    ],
+    why_title:'Почему Мы?', why_sub:'Более 5 лет опыта обслуживания электрического личного транспорта.',
+    why: [
+      { icon:'🛡️', title:'Гарантия 6 Месяцев', desc:'На все ремонты и замененные запчасти выдаём письменную гарантию.' },
+      { icon:'🔩', title:'Оригинальные Запчасти', desc:'Используем только сертифицированные компоненты от проверенных поставщиков.' },
+      { icon:'⚡', title:'Срочный Сервис', desc:'Большинство ремонтов — за 1–3 рабочих дня. Доступен срочный сервис 24ч.' },
+      { icon:'👨‍🔧', title:'Сертифицированные Техники', desc:'Наша команда имеет сертификаты производителей и постоянно обучается.' },
+      { icon:'💰', title:'Честные Цены', desc:'Всегда называем стоимость до начала работы. Никаких скрытых платежей.' }
+    ],
+    ba_title:'До и После', ba_sub:'Возвращаем устройства в полностью рабочее состояние — как новые.',
+    ba_before:'ДО', ba_after:'ПОСЛЕ',
+    market_title:'Рынок Э-Мобильности в Польше Растёт', market_sub:'Количество личного электротранспорта в Польше растёт примерно на 40% в год. Профессиональный сервис становится необходимостью.',
+    market_chart_title:'Зарегистрированные э-транспортные средства в Польше (тыс.)',
+    market_stats: [
+      { num:'40%', title:'Ежегодный рост рынка', desc:'Э-транспорт — один из самых быстрорастущих сегментов в Польше.' },
+      { num:'2M+', title:'Пользователей в Польше', desc:'Оценочное число пользователей электросамокатов и велосипедов в 2024 году.' },
+      { num:'73%', title:'Нуждаются в сервисе', desc:'Каждое третье устройство требует обслуживания в первые 18 месяцев.' }
+    ],
+    process_title:'Как Мы Работаем', process_sub:'Простая, прозрачная процедура — от контакта до получения.',
+    process: [
+      { num:'01', title:'Контакт и Расчёт', desc:'Позвоните, напишите в WhatsApp или Telegram. Опишите проблему и получите бесплатную оценку за 30 минут.' },
+      { num:'02', title:'Диагностика', desc:'Точная диагностика в нашей мастерской с использованием профессионального оборудования и ПО.' },
+      { num:'03', title:'Ремонт и Получение', desc:'Ремонт сертифицированным техником, финальное тестирование, письменная гарантия и возврат устройства.' }
+    ],
+    reviews_title:'Отзывы Клиентов', reviews_sub:'Читайте отзывы клиентов — более 150 оценок на Google Maps.',
+    reviews_link:'Все отзывы в Google',
+    reviews: [
+      { text:'Срочный ремонт Xiaomi Pro 2 — сгорел контроллер. Через 2 дня самокат как новый. Честная цена, профессиональный сервис. Рекомендую!', name:'Марцин К.', rating:5 },
+      { text:'Сервис батареи электровелосипеда Bosch. Восстановление вернуло почти полную ёмкость за долю стоимости новой батареи. Отличная работа!', name:'Анна В.', rating:5 },
+      { text:'Диагностика обнаружила проблему с контроллером BMS. Исправили за 3 дня. Хорошая коммуникация, надёжно, цена соответствует качеству!', name:'Пётр С.', rating:5 }
+    ],
+    faq_title:'Частые Вопросы', faq_sub:'Есть другой вопрос? Напишите — ответим в течение часа.',
+    faq: [
+      { q:'Сколько времени занимает ремонт?', a:'Большинство ремонтов выполняется за 1–3 рабочих дня. При сложных неисправностях или заказе запчастей — до 5–7 дней. По запросу доступен срочный сервис 24ч за доплату.' },
+      { q:'Вы ремонтируете все марки самокатов и электровелосипедов?', a:'Да! Обслуживаем Xiaomi, Segway-Ninebot, Kaabo, Dualtron, Vsett, Pure Electric, Razor (самокаты) и Bosch, Shimano, Bafang, Yamaha и другие приводные системы (электровелосипеды).' },
+      { q:'Даёте ли гарантию на ремонт?', a:'Да — на все ремонты и замененные запчасти выдаём письменную гарантию на 6 месяцев. При неисправности в этот период ремонт бесплатный.' },
+      { q:'Сколько стоит ремонт?', a:'Диагностика и мелкий ремонт от 50 злотых. Восстановление батареи от 150 злотых, замена блока от 300 злотых. Сложные работы оцениваются после бесплатной диагностики — всегда до начала работ.' },
+      { q:'Что такое восстановление батареи?', a:'Восстановление — это замена повреждённых литиевых ячеек с сохранением оригинального корпуса и BMS. Стоит 30–50% от новой батареи и восстанавливает 90–95% заводской ёмкости.' },
+      { q:'Как записаться?', a:'Позвоните +48 515 430 479, напишите в WhatsApp или Telegram — или используйте кнопку ⚡ в правом нижнем углу страницы. Работаем Пн–Сб 9:00–19:00.' },
+      { q:'Принимаете ли без записи?', a:'Да, можно приехать без записи. Но рекомендуем позвонить заранее, чтобы избежать ожидания — особенно в пик сезона (весна/лето). Первичная диагностика всегда бесплатна.' },
+      { q:'Возможен ли выездной ремонт?', a:'В отдельных случаях (например, самокат не едет) предлагаем забрать устройство по адресу в Варшаве. Свяжитесь с нами для уточнения деталей.' }
+    ],
+    contact_title:'Контакты и Расположение', contact_sub:'Мы в центре Варшавы — приезжайте в мастерскую!',
+    contact_address:'Адрес', contact_addr_val:'ул. Чёлка 35/84, 01-445 Варшава',
+    contact_phone:'Телефон / WhatsApp / Telegram', contact_hours:'Часы Работы',
+    contact_hours_val:'Пн – Пт: 9:00 – 19:00\nСуббота: 10:00 – 17:00',
+    contact_map:'Открыть в Google Maps', contact_social:'Социальные Сети',
+    footer_desc:'Профессиональный сервис электросамокатов и электровелосипедов в Варшаве. Быстро, надёжно, с гарантией.',
+    footer_links:'Навигация', footer_services_title:'Услуги', footer_contact_title:'Контакты',
+    footer_links_list:['Главная','Услуги','FAQ','Контакт'],
+    footer_services_list:['Электроремонт','Диагностика','Сервис Батарей','Тюнинг'],
+    footer_rights:'© 2024 GRENZ Сервис. Все права защищены.',
+    footer_terms:'Условия', footer_privacy:'Политика Конфиденц.', footer_cookie:'Cookies',
+    cookie_text:'Этот сайт использует cookies для наилучшего опыта. Продолжая использование, вы принимаете нашу',
+    cookie_policy:'Политику Cookies', cookie_accept:'Принять', cookie_decline:'Отклонить',
+    services_page_title:'Наши Услуги', services_page_sub:'Полный спектр услуг для электрического личного транспорта.',
+    badges: { services:'Услуги', about:'О Нас', realizations:'Работы', market:'Рынок', process:'Как работаем', reviews:'Отзывы', faq:'FAQ', contact:'Контакты' },
+  }
+};
+
+// Chart data (e-vehicle registrations in Poland, thousands)
+const chartData = [
+  { year:'2019', val:45, pct:5 },
+  { year:'2020', val:120, pct:13 },
+  { year:'2021', val:270, pct:28 },
+  { year:'2022', val:450, pct:47 },
+  { year:'2023', val:680, pct:72 },
+  { year:'2024', val:950, pct:100 }
+];
+
+if(typeof module!=='undefined') module.exports={i18n,chartData};

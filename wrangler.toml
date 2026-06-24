@@ -1,0 +1,15 @@
+# Cloudflare Workers — Static Assets Configuration
+# https://developers.cloudflare.com/workers/static-assets/
+
+name = "grenz-pages"
+compatibility_date = "2025-01-01"
+main = "_worker.js"
+
+# Static assets binding — обслуживает HTML/CSS/JS/картинки
+[assets]
+directory = "./"
+binding = "ASSETS"
+# При 404 — наш _worker.js сам обработает и подставит 404.html
+not_found_handling = "none"
+html_handling = "auto-trailing-slash"
+

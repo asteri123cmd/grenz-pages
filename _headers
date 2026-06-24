@@ -1,58 +1,40 @@
-# Оптимальные headers для производительности и безопасности
+# Cloudflare Pages — HTTP Headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+# Format: comments start with #, URL patterns are NOT indented, headers ARE indented.
 
-# HTML - не кешировать, всегда проверять на сервере
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate
+/*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
-# CSS и JavaScript - кешировать на 1 год (файлы имеют хеши в имени)
 /css/*
-  Cache-Control: public, max-age=31536000, immutable
-  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=86400
 
 /js/*
-  Cache-Control: public, max-age=31536000, immutable
-  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=86400
 
-# Изображения - кешировать на 1 год
-/uploads/*
-  Cache-Control: public, max-age=31536000, immutable
-  X-Content-Type-Options: nosniff
-
-# SVG иконки - кешировать на 1 год
 /icons/*
-  Cache-Control: public, max-age=31536000, immutable
-  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=86400
 
-# Favicon и manifest - кешировать на 30 дней
-/favicon.svg
-  Cache-Control: public, max-age=2592000
-  X-Content-Type-Options: nosniff
+/uploads/*
+  Cache-Control: public, max-age=86400
 
-/apple-touch-icon.svg
-  Cache-Control: public, max-age=2592000
-  X-Content-Type-Options: nosniff
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
 
-/site.webmanifest
-  Cache-Control: public, max-age=2592000
-  Content-Type: application/manifest+json
-  X-Content-Type-Options: nosniff
-
-# Sitemap и robots - кешировать на 7 дней
 /sitemap.xml
-  Cache-Control: public, max-age=604800
-  Content-Type: application/xml
-  X-Content-Type-Options: nosniff
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=86400
 
 /robots.txt
-  Cache-Control: public, max-age=604800
-  Content-Type: text/plain
-  X-Content-Type-Options: nosniff
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400
 
-# Все остальное - кешировать на 1 час
-/*
-  Cache-Control: public, max-age=3600
-  X-Content-Type-Options: nosniff
+/site.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+  Cache-Control: public, max-age=86400
+
+/404.html
+  Cache-Control: public, max-age=300

@@ -1,0 +1,28 @@
+# Cloudflare Pages — Redirects & URL Rewrites
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# ─── Pretty URLs (без .html) ───
+/services      /services.html      301
+/terms         /terms.html         301
+/privacy       /privacy.html       301
+/cookie        /cookie.html        301
+/cookies       /cookie.html        301
+
+# ─── Stare URL → nowe ───
+/index         /                   301
+/home          /                   301
+
+# ─── Multi-language paths ───
+/en/           /?lang=en           302
+/ru/           /?lang=ru           302
+/pl/           /                   301
+/en            /?lang=en           302
+/ru            /?lang=ru           302
+
+# UWAGA: NIE ustawiać /* → /index.html 200 (catch-all SPA).
+# To powoduje, że KAŻDY nieistniejący URL zwraca HTTP 200 z treścią strony głównej,
+# zamiast prawdziwego 404 — Google Search Console nie wykrywa wtedy błędów 404,
+# a Cloudflare Pages nie używa pliku 404.html.
+#
+# Cloudflare Pages AUTOMATYCZNIE pokazuje /404.html z prawidłowym kodem HTTP 404
+# dla każdego nieistniejącego URL — bez żadnej dodatkowej reguły.
