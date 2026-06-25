@@ -1,32 +1,15 @@
-# Cloudflare Pages — Redirects & URL Rewrites
-# https://developers.cloudflare.com/pages/configuration/redirects/
+# Cloudflare Pages — Redirects
+# ВАЖНО: Pages сам отдаёт naprawa.html по URL /naprawa — НЕ нужны редиректы .html
+# Добавлять только редиректы для РАЗНЫХ URL (не .html ↔ без .html)
 
-# ─── Pretty URLs (без .html) ───
-/services      /services.html      301
-/naprawa       /naprawa.html       301
-/diagnostyka   /diagnostyka.html   301
-/bateria       /bateria.html       301
-/tuning        /tuning.html        301
-/terms         /terms.html         301
-/privacy       /privacy.html       301
-/cookie        /cookie.html        301
-/cookies       /cookie.html        301
-
-# ─── Stare URL → nowe ───
+# ─── Старые/альтернативные URL → правильные ───
 /index         /                   301
 /home          /                   301
+/cookies       /cookie             301
 
-# ─── Multi-language paths ───
+# ─── Языковые пути ───
+/pl/           /                   301
 /en/           /?lang=en           302
 /ru/           /?lang=ru           302
-/pl/           /                   301
 /en            /?lang=en           302
 /ru            /?lang=ru           302
-
-# UWAGA: NIE ustawiać /* → /index.html 200 (catch-all SPA).
-# To powoduje, że KAŻDY nieistniejący URL zwraca HTTP 200 z treścią strony głównej,
-# zamiast prawdziwego 404 — Google Search Console nie wykrywa wtedy błędów 404,
-# a Cloudflare Pages nie używa pliku 404.html.
-#
-# Cloudflare Pages AUTOMATYCZNIE pokazuje /404.html z prawidłowym kodem HTTP 404
-# dla każdego nieistniejącego URL — bez żadnej dodatkowej reguły.
