@@ -1,4 +1,4 @@
-# Cloudflare Pages — HTTP Headers
+ Cloudflare Pages — HTTP Headers
 # https://developers.cloudflare.com/pages/configuration/headers/
 # Format: comments start with #, URL patterns are NOT indented, headers ARE indented.
 
@@ -7,7 +7,6 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
 /css/*
   Cache-Control: public, max-age=86400
