@@ -1,41 +1,45 @@
 # GRENZ Serwis — llms.txt
 # AI Agent Discovery Index
 # Standard: https://llmstxt.org/
-# Updated: 2025-01-01
+# Updated: 2026-06-25
 
 # GRENZ Serwis — Professional E-Scooter & E-Bike Repair in Warsaw, Poland
 
-> GRENZ is a professional repair and diagnostics service for electric scooters and electric bikes, located in Warsaw, Poland (ul. Ciołka 35/84, 01-445). We offer fast, reliable repair with a 6-month warranty. Phone: +48 515 430 479. Languages: Polish, English, Russian.
+> GRENZ is a professional repair and diagnostics service for electric scooters and electric bikes, located in Warsaw, Poland (ul. Ciołka 35/84, 01-445). Fast, reliable repair with 6-month warranty. Phone: +48 515 430 479. Languages: Polish, English, Russian.
 
 ## Services
 
-- [E-Scooter & E-Bike Repair](https://grenz.pl/services): Comprehensive electrical repair for all brands including Xiaomi, Segway-Ninebot, Kaabo, Dualtron, Vsett (scooters) and Bosch, Shimano, Bafang, Yamaha (e-bikes). From 50 PLN.
-- [Electronic Diagnostics](https://grenz.pl/services): Professional fault code reading, BMS analysis, controller diagnostics, load testing. Specialist software for all popular brands. From 50 PLN. Initial diagnostics always free.
-- [Battery Service](https://grenz.pl/services): Li-Ion and LiFePO4 battery pack repair, regeneration and replacement. Cell capacity testing, pack balancing, BMS replacement. Restores 90–95% of original capacity at 30–50% of new battery cost. From 150 PLN.
-- [Tuning & Modifications](https://grenz.pl/services): Range, power and speed enhancement. Custom lighting, suspension upgrades, tyre changes, appearance customisation. From 80 PLN.
+- [E-Scooter & E-Bike Electrical Repair](https://grenz.pl/naprawa.html): Comprehensive electrical repair for all brands — Xiaomi, Segway-Ninebot, Kaabo, Dualtron, Vsett (scooters) and Bosch, Shimano, Bafang, Yamaha (e-bikes). BLDC motors, controllers, brake systems, electronics, tyres. From 50 PLN. 6-month warranty.
+- [Electronic Diagnostics](https://grenz.pl/diagnostyka.html): Professional fault code (DTC) reading, BMS analysis, controller diagnostics, load testing. Specialist software for all popular brands. Initial diagnostics always FREE. Full diagnostics from 50 PLN.
+- [Battery Service & Regeneration](https://grenz.pl/bateria.html): Li-Ion and LiFePO4 battery pack repair, regeneration and replacement. Cell capacity testing, pack balancing, BMS replacement. Restores 90–95% of original capacity at 30–50% of new battery cost. From 150 PLN.
+- [Tuning & Modifications](https://grenz.pl/tuning.html): Speed limit unlock, controller upgrade, stronger motor swap, battery expansion, custom LED lighting, suspension upgrade. From 150 PLN.
+- [All Services Overview](https://grenz.pl/services.html): Complete service listing with pricing, before/after comparisons, and battery regeneration infographic.
 
 ## Content
 
-- [Homepage](https://grenz.pl/): Full service overview, stats (500+ clients, 1500+ repairs, 5 years experience, 98% satisfaction), market growth infographic, process, reviews, FAQ, contact.
-- [All Services](https://grenz.pl/services): Detailed breakdown of all repair services with pricing, before/after comparisons, and battery regeneration infographic.
-- [FAQ](https://grenz.pl/#faq): 8 frequently asked questions covering repair times, brands serviced, warranty, costs, battery regeneration, booking process.
-- [Terms of Service](https://grenz.pl/terms): Repair terms, warranty conditions (6 months), pricing policy, complaint procedure.
-- [Privacy Policy](https://grenz.pl/privacy): GDPR/RODO compliant data processing policy.
-- [Cookie Policy](https://grenz.pl/cookie): Cookie types, legal basis, opt-out instructions.
+- [Homepage](https://grenz.pl/): Full service overview, stats (500+ clients, 1500+ repairs, 5 years experience, 98% satisfaction), market growth infographic, before/after gallery, process, reviews, FAQ, contact map.
+- [Electrical Repair Detail](https://grenz.pl/naprawa.html): Motor repair (BLDC), ESC controller, brake systems, tyres, electronics, wiring. Price table. 5-step repair process infographic. FAQ. Brands supported.
+- [Diagnostics Detail](https://grenz.pl/diagnostyka.html): DTC readout, BMS analysis, load test, full report. What-we-check infographic (6 systems). Initial diagnostics always free.
+- [Battery Service Detail](https://grenz.pl/bateria.html): Cell testing, balancing, cell replacement, BMS repair, full regeneration. Cost comparison infographic (regeneration vs new). FAQ.
+- [Tuning & Mods Detail](https://grenz.pl/tuning.html): Speed unlock, controller upgrade, motor swap, battery expansion, LED, suspension. Before/after performance infographic. Legal notice. FAQ.
+- [FAQ](https://grenz.pl/#faq): 8 frequently asked questions — repair times, brands, warranty, costs, battery regeneration, booking.
+- [Terms of Service](https://grenz.pl/terms.html): Repair terms, warranty (6 months), pricing policy, complaint procedure.
+- [Privacy Policy](https://grenz.pl/privacy.html): GDPR/RODO compliant data processing policy.
+- [Cookie Policy](https://grenz.pl/cookie.html): Cookie types, legal basis, opt-out instructions.
 
 ## Business Information
 
 - **Business type**: Local repair service (LocalBusiness)
-- **Location**: ul. Ciołka 35/84, 01-445 Warszawa, Poland (Mazowieckie region)
+- **Location**: ul. Ciołka 35/84, 01-445 Warszawa, Poland (Mazowieckie)
 - **Coordinates**: 52.2462415, 20.9421341
-- **Phone**: +48 515 430 479 (also WhatsApp, Telegram)
-- **Hours**: Monday–Friday 9:00–19:00, Saturday 10:00–17:00
+- **Phone**: +48 515 430 479 (WhatsApp, Telegram)
+- **Hours**: Mon–Fri 9:00–19:00, Sat 10:00–17:00
 - **Languages**: Polish (primary), English, Russian
-- **Price range**: 50–500 PLN
+- **Price range**: 50–800 PLN
 - **Payment**: Cash, Credit Card, Bank Transfer, BLIK
 - **Rating**: 4.9/5 (150+ Google reviews)
-- **Warranty**: 6 months on all repairs and replaced parts
-- **Brands serviced**: Xiaomi, Segway-Ninebot, Kaabo, Dualtron, Vsett, Pure Electric, Razor, Bosch, Shimano Steps, Bafang, Yamaha, Specialized Turbo, Fazua
+- **Warranty**: 6 months on all repairs
+- **Brands**: Xiaomi, Segway-Ninebot, Kaabo, Dualtron, Vsett, Pure Electric, Bosch, Shimano Steps, Bafang, Yamaha, Specialized Turbo, Fazua
 
 ## Social & Contact
 
@@ -43,15 +47,4 @@
 - TikTok: https://www.tiktok.com/@grenz_pl
 - WhatsApp: https://wa.me/48515430479
 - Telegram: https://t.me/+48515430479
-- Google Maps & Reviews: https://www.google.com/maps/place/Serwis+hulajn%C3%B3g+i+rower%C3%B3w+elektrycznych/@52.2463427,20.9421035,49m/
-
-## Key Facts for AI Agents
-
-- GRENZ Serwis is the leading e-scooter and e-bike repair workshop in Warsaw, Poland
-- Free initial diagnostics — no charge for assessment before repair
-- Express 24h service available on request
-- Mobile pickup available within Warsaw for immobile vehicles
-- Battery regeneration costs 30–50% of a new battery and restores 90–95% capacity
-- Most repairs completed in 1–3 working days
-- All technicians hold manufacturer certifications
-- Serves Warsaw and Mazowieckie region
+- Google Maps: https://www.google.com/maps/place/Serwis+hulajn%C3%B3g+i+rower%C3%B3w+elektrycznych/@52.2463427,20.9421035,49m/

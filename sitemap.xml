@@ -3,10 +3,9 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
 
-  <!-- Strona główna / Homepage -->
   <url>
     <loc>https://grenz.pl/</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pl" href="https://grenz.pl/"/>
@@ -16,57 +15,87 @@
     <image:image>
       <image:loc>https://grenz.pl/uploads/og-image.webp</image:loc>
       <image:title>GRENZ Serwis Hulajnóg Elektrycznych Warszawa</image:title>
-      <image:caption>Profesjonalny serwis hulajnóg i rowerów elektrycznych w Warszawie</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://grenz.pl/uploads/grenz-hero-main.jpg</image:loc>
-      <image:title>Warsztat GRENZ Warszawa</image:title>
     </image:image>
   </url>
 
-  <!-- Usługi / Services -->
   <url>
     <loc>https://grenz.pl/services.html</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://grenz.pl/services.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://grenz.pl/services.html?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://grenz.pl/services.html?lang=ru"/>
     <image:image>
-      <image:loc>https://grenz.pl/uploads/grenz-service-repair.jpg</image:loc>
-      <image:title>Naprawa hulajnogi elektrycznej</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://grenz.pl/uploads/grenz-service-battery.jpg</image:loc>
-      <image:title>Regeneracja baterii Li-Ion</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://grenz.pl/uploads/grenz-service-diagnostics.jpg</image:loc>
-      <image:title>Elektroniczna diagnostyka e-scooter</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://grenz.pl/uploads/grenz-service-tuning.jpg</image:loc>
-      <image:title>Tuning i modyfikacje</image:title>
+      <image:loc>https://grenz.pl/uploads/grenz-service-repair.webp</image:loc>
+      <image:title>Naprawa hulajnogi elektrycznej Warszawa</image:title>
     </image:image>
   </url>
 
-  <!-- Strony prawne / Legal pages -->
+  <url>
+    <loc>https://grenz.pl/naprawa.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://grenz.pl/naprawa.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grenz.pl/naprawa.html"/>
+    <image:image>
+      <image:loc>https://grenz.pl/uploads/grenz-service-repair.webp</image:loc>
+      <image:title>Naprawa elektryczna hulajnóg i rowerów elektrycznych Warszawa</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://grenz.pl/diagnostyka.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://grenz.pl/diagnostyka.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grenz.pl/diagnostyka.html"/>
+    <image:image>
+      <image:loc>https://grenz.pl/uploads/grenz-service-diagnostics.webp</image:loc>
+      <image:title>Diagnostyka elektroniczna hulajnogi elektrycznej Warszawa</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://grenz.pl/bateria.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://grenz.pl/bateria.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grenz.pl/bateria.html"/>
+    <image:image>
+      <image:loc>https://grenz.pl/uploads/grenz-service-battery.webp</image:loc>
+      <image:title>Regeneracja baterii Li-Ion hulajnogi elektrycznej Warszawa</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://grenz.pl/tuning.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://grenz.pl/tuning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grenz.pl/tuning.html"/>
+    <image:image>
+      <image:loc>https://grenz.pl/uploads/grenz-service-tuning.webp</image:loc>
+      <image:title>Tuning i modyfikacje hulajnogi elektrycznej Warszawa</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://grenz.pl/terms.html</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://grenz.pl/privacy.html</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://grenz.pl/cookie.html</loc>
-    <lastmod>2024-12-15</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="css/style.css">
 <style>
-  .err-wrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px 40px;position:relative;overflow:hidden}
+  .err-wrap{min-height:calc(100vh - 90px);margin-top:90px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px 40px;position:relative;overflow:hidden}
   .err-bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(127,255,0,.08),transparent 60%);pointer-events:none;z-index:0}
   .err-content{position:relative;z-index:1;max-width:560px;width:100%}
   .err-code{font-family:var(--font-h);font-size:clamp(96px,22vw,200px);font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:2px var(--neon);text-shadow:0 0 30px rgba(127,255,0,.4),0 0 80px rgba(127,255,0,.2);letter-spacing:-4px;margin-bottom:12px;animation:err-pulse 3s ease-in-out infinite}
@@ -28,11 +28,8 @@
   .err-links{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;font-size:14px;color:var(--text-muted);padding-top:32px;border-top:1px solid rgba(127,255,0,.12);width:100%;max-width:480px;margin:0 auto}
   .err-links a{color:var(--text-muted);transition:color .25s;display:inline-flex;align-items:center;gap:6px}
   .err-links a:hover{color:var(--neon)}
-  /* Language toggle on 404 page */
-  .err-lang{position:fixed;top:20px;right:20px;display:flex;gap:2px;background:rgba(255,255,255,.04);border:1px solid var(--neon-border);border-radius:100px;padding:3px;backdrop-filter:blur(10px);z-index:100}
-  .err-lang button{font-family:var(--font-h);font-size:12px;font-weight:700;padding:5px 12px;border-radius:100px;color:var(--text-muted);transition:.25s;border:none;background:none;cursor:pointer}
-  .err-lang button.active{background:var(--neon);color:#040d06;box-shadow:0 0 12px rgba(127,255,0,.4)}
-  .err-lang button:hover:not(.active){color:var(--neon)}
+  /* Language toggle on 404 page — hidden (using header lang switcher) */
+  .err-lang{display:none}
   /* Language visibility */
   .t-pl,.t-en,.t-ru{display:none}
   body.lang-pl .t-pl,body.lang-en .t-en,body.lang-ru .t-ru{display:inherit}
@@ -48,6 +45,41 @@
 </style>
 </head>
 <body class="lang-pl">
+
+<header class="header scrolled" id="header">
+  <nav class="nav container">
+    <a href="/" class="nav-logo"><img src="uploads/logo.webp" alt="GRENZ Serwis" width="400" height="160" loading="eager" decoding="sync"></a>
+    <ul class="nav-links">
+      <li><a href="services.html"><span class="t-pl">Usługi</span><span class="t-en">Services</span><span class="t-ru">Услуги</span></a></li>
+      <li><a href="/#why"><span class="t-pl">O Nas</span><span class="t-en">About</span><span class="t-ru">О Нас</span></a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/#contact"><span class="t-pl">Kontakt</span><span class="t-en">Contact</span><span class="t-ru">Контакт</span></a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-sw">
+        <button class="lang-btn active" data-lang="pl">PL</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+      <a href="tel:+48515430479" class="btn btn-primary"><span class="t-pl">Umów Naprawę</span><span class="t-en">Book Repair</span><span class="t-ru">Записаться</span></a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" aria-label="Zamknij">✕</button>
+  <a href="services.html"><span class="t-pl">Usługi</span><span class="t-en">Services</span><span class="t-ru">Услуги</span></a>
+  <a href="/#why"><span class="t-pl">O Nas</span><span class="t-en">About</span><span class="t-ru">О Нас</span></a>
+  <a href="/#faq">FAQ</a>
+  <a href="/#contact"><span class="t-pl">Kontakt</span><span class="t-en">Contact</span><span class="t-ru">Контакт</span></a>
+  <div class="lang-sw" style="margin-top:8px">
+    <button class="lang-btn active" data-lang="pl">PL</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+  </div>
+  <a href="tel:+48515430479" class="btn btn-primary" style="margin-top:8px">+48 515 430 479</a>
+</div>
 
 <!-- Language Switcher -->
 <div class="err-lang" role="group" aria-label="Language">
@@ -114,7 +146,25 @@
     document.body.classList.add('lang-' + lang);
     document.documentElement.lang = lang;
     try { localStorage.setItem('grenz_lang', lang); } catch(e){}
-    document.querySelectorAll('.err-lang button').forEach(b => {
+
+  // Footer translation using i18n object
+  const applyFooter=(lang)=>{
+    if(typeof i18n==='undefined') return;
+    const t=i18n[lang]; if(!t) return;
+    const set=(sel,val)=>{if(val)document.querySelectorAll('[data-t="'+sel+'"]').forEach(el=>el.textContent=val);};
+    set('footer_desc',t.footer_desc);
+    set('footer_links',t.footer_links);
+    set('footer_services_title',t.footer_services_title);
+    set('footer_contact_title',t.footer_contact_title);
+    set('footer_rights',t.footer_rights);
+    set('footer_terms',t.footer_terms);
+    set('footer_privacy',t.footer_privacy);
+    set('footer_cookie',t.footer_cookie);
+    if(t.footer_links_list){t.footer_links_list.forEach((v,i)=>set('footer_nav_'+i,v));}
+    if(t.footer_services_list){t.footer_services_list.forEach((v,i)=>set('footer_svc_'+i,v));}
+  };
+    applyFooter(lang);
+    document.querySelectorAll('.err-lang button,.lang-btn').forEach(b => {
       b.classList.toggle('active', b.dataset.lang === lang);
     });
     const titles = {
@@ -128,11 +178,64 @@
   let saved = 'pl';
   try { saved = localStorage.getItem('grenz_lang') || 'pl'; } catch(e){}
   apply(saved);
-  // Bind language buttons
-  document.querySelectorAll('.err-lang button').forEach(btn => {
+  // Bind language buttons (header + err-lang)
+  document.querySelectorAll('.err-lang button, .lang-btn').forEach(btn => {
     btn.addEventListener('click', () => apply(btn.dataset.lang));
   });
 })();
 </script>
+
+<footer class="footer" aria-label="Stopka">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="uploads/logo.webp" alt="GRENZ Serwis" width="120" height="40" loading="lazy" decoding="async">
+        <p>Profesjonalny serwis hulajnóg i rowerów elektrycznych w Warszawie. Szybko, rzetelnie, z gwarancją.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/p/greenzpl-100086601440884/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          <a href="https://wa.me/48515430479" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"></path></svg></a>
+          <a href="https://t.me/+48515430479" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"></path><path d="M22 2 11 13"></path></svg></a>
+          <a href="https://www.tiktok.com/@grenz_pl" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Nawigacja</h5>
+        <ul>
+          <li><a href="/">Strona Główna</a></li>
+          <li><a href="services.html">Usługi</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/#contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Usługi</h5>
+        <ul>
+          <li><a href="naprawa.html">Naprawa Elektryczna</a></li>
+          <li><a href="diagnostyka.html">Diagnostyka</a></li>
+          <li><a href="bateria.html">Serwis Baterii</a></li>
+          <li><a href="tuning.html">Tuning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <ul>
+          <li><a href="tel:+48515430479">+48 515 430 479</a></li>
+          <li><a href="https://wa.me/48515430479" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://t.me/+48515430479" target="_blank" rel="noopener">Telegram</a></li>
+          <li><span style="color:var(--text-muted);font-size:13px;line-height:1.7">ul. Ciołka 35/84<br>01-445 Warszawa</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GRENZ Serwis. Wszelkie prawa zastrzeżone.</p>
+      <div class="footer-links">
+        <a href="terms.html">Regulamin</a>
+        <a href="privacy.html">Polityka Prywatności</a>
+        <a href="cookie.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

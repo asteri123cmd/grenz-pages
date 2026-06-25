@@ -49,7 +49,7 @@
 <div class="legal-content">
 
 <div class="badge" style="margin-bottom:16px">📋 Prawne</div>
-<h1 data-t="" id="terms-pl">Regulamin Świadczenia Usług<br><span id="terms-en" style="display:none">Terms of Service</span><span id="terms-ru" style="display:none">Условия Оказания Услуг</span></h1>
+<h1>Regulamin Świadczenia Usług<span id="terms-en-title" style="display:none"> / Terms of Service</span><span id="terms-ru-title" style="display:none"> / Условия Оказания Услуг</span></h1>
 <p class="updated">GRENZ Serwis | ul. Ciołka 35/84, 01-445 Warszawa | Ostatnia aktualizacja: 01.01.2024</p>
 
 <!-- PL -->
@@ -158,16 +158,93 @@
 </div>
 </main>
 
-<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:1px solid rgba(127,255,0,.08);padding-top:24px"><p>© 2024 GRENZ Serwis. Wszelkie prawa zastrzeżone.</p><div class="footer-links"><a href="/">Strona Główna</a><a href="privacy.html">Polityka Prywatności</a><a href="cookie.html">Cookies</a></div></div></div></footer>
+<footer class="footer" aria-label="Stopka">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="uploads/logo.webp" alt="GRENZ Serwis" width="120" height="40" loading="lazy" decoding="async">
+        <p data-t="footer_desc">Profesjonalny serwis hulajnóg i rowerów elektrycznych w Warszawie. Szybko, rzetelnie, z gwarancją.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/p/greenzpl-100086601440884/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          <a href="https://wa.me/48515430479" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"></path></svg></a>
+          <a href="https://t.me/+48515430479" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"></path><path d="M22 2 11 13"></path></svg></a>
+          <a href="https://www.tiktok.com/@grenz_pl?_r=1&amp;_t=ZN-96XtvgZmsvi" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-t="footer_links">Nawigacja</h5>
+        <ul>
+          <li><a href="/" data-t="footer_nav_0">Strona Główna</a></li>
+          <li><a href="services.html" data-t="footer_nav_1">Usługi</a></li>
+          <li><a href="/#faq" data-t="footer_nav_2">FAQ</a></li>
+          <li><a href="/#contact" data-t="footer_nav_3">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-t="footer_services_title">Usługi</h5>
+        <ul>
+          <li><a href="naprawa.html" data-t="footer_svc_0">Naprawa Elektryczna</a></li>
+          <li><a href="diagnostyka.html" data-t="footer_svc_1">Diagnostyka</a></li>
+          <li><a href="bateria.html" data-t="footer_svc_2">Serwis Baterii</a></li>
+          <li><a href="tuning.html" data-t="footer_svc_3">Tuning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-t="footer_contact_title">Kontakt</h5>
+        <ul>
+          <li><a href="tel:+48515430479">+48 515 430 479</a></li>
+          <li><a href="https://wa.me/48515430479" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://t.me/+48515430479" target="_blank" rel="noopener">Telegram</a></li>
+          <li><span style="color:var(--text-muted);font-size:13px;line-height:1.7">ul. Ciołka 35/84<br>01-445 Warszawa</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-t="footer_rights">© 2025 GRENZ Serwis. Wszelkie prawa zastrzeżone.</p>
+      <div class="footer-links">
+        <a href="terms.html" data-t="footer_terms">Regulamin</a>
+        <a href="privacy.html" data-t="footer_privacy">Polityka Prywatności</a>
+        <a href="cookie.html" data-t="footer_cookie">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src="js/i18n.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
-  const lang=localStorage.getItem('grenz_lang')||'pl';
-  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
-  const show=(id)=>{['pl','en','ru'].forEach(l=>{const el=document.getElementById('legal-'+l);if(el)el.style.display=l===id?'block':'none';const h=document.getElementById('terms-'+l);if(h)h.style.display=l===id?'inline':'none';})};
-  show(lang);
-  document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>{localStorage.setItem('grenz_lang',b.dataset.lang);show(b.dataset.lang);document.querySelectorAll('.lang-btn').forEach(x=>x.classList.toggle('active',x===b));}));
+
+  // Footer translation using i18n object
+  const applyFooter=(lang)=>{
+    if(typeof i18n==='undefined') return;
+    const t=i18n[lang]; if(!t) return;
+    const set=(sel,val)=>{if(val)document.querySelectorAll('[data-t="'+sel+'"]').forEach(el=>el.textContent=val);};
+    set('footer_desc',t.footer_desc);
+    set('footer_links',t.footer_links);
+    set('footer_services_title',t.footer_services_title);
+    set('footer_contact_title',t.footer_contact_title);
+    set('footer_rights',t.footer_rights);
+    set('footer_terms',t.footer_terms);
+    set('footer_privacy',t.footer_privacy);
+    set('footer_cookie',t.footer_cookie);
+    if(t.footer_links_list){t.footer_links_list.forEach((v,i)=>set('footer_nav_'+i,v));}
+    if(t.footer_services_list){t.footer_services_list.forEach((v,i)=>set('footer_svc_'+i,v));}
+  };
+  const apply=(l)=>{
+    applyFooter(l);
+    ['pl','en','ru'].forEach(x=>{
+      const el=document.getElementById('legal-'+x);
+      if(el) el.style.display=x===l?'block':'none';
+    });
+    const en=document.getElementById('terms-en-title');
+    const ru=document.getElementById('terms-ru-title');
+    if(en) en.style.display=l==='en'?'inline':'none';
+    if(ru) ru.style.display=l==='ru'?'inline':'none';
+    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
+    try{localStorage.setItem('grenz_lang',l);}catch(e){}
+  };
+  apply(localStorage.getItem('grenz_lang')||'pl');
+  document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.lang)));
 });
 </script>
 </body>

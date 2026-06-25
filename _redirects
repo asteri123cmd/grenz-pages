@@ -3,6 +3,10 @@
 
 # ─── Pretty URLs (без .html) ───
 /services      /services.html      301
+/naprawa       /naprawa.html       301
+/diagnostyka   /diagnostyka.html   301
+/bateria       /bateria.html       301
+/tuning        /tuning.html        301
 /terms         /terms.html         301
 /privacy       /privacy.html       301
 /cookie        /cookie.html        301
