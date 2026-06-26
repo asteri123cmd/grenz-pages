@@ -5,10 +5,13 @@
 User-agent: *
 Allow: /
 Disallow: /scraps/
+# Блокируем URL-параметры языка — не дублировать страницы
+Disallow: /*?lang=
 
 # ─── Google ───
 User-agent: Googlebot
 Allow: /
+Disallow: /*?lang=
 Crawl-delay: 0
 
 User-agent: Googlebot-Image
@@ -18,6 +21,7 @@ Allow: /icons/
 # ─── Bing ───
 User-agent: Bingbot
 Allow: /
+Disallow: /*?lang=
 Crawl-delay: 1
 
 # ─── AI Agents — ALLOWED for AI search visibility ───
@@ -53,8 +57,5 @@ Allow: /
 
 # ─── Sitemap ───
 Sitemap: https://grenz.pl/sitemap.xml
-
-# AI Content Discovery
 Llms: https://grenz.pl/llms.txt
 Markdown: https://grenz.pl/content.md
-Sitemap: https://grenz.pl/llms.txt

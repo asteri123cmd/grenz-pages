@@ -1,15 +1,18 @@
 # Cloudflare Pages — Redirects
 # ВАЖНО: Pages сам отдаёт naprawa.html по URL /naprawa — НЕ нужны редиректы .html
-# Добавлять только редиректы для РАЗНЫХ URL (не .html ↔ без .html)
+
+# ─── www → non-www (301) ───
+https://www.grenz.pl/*   https://grenz.pl/:splat   301
 
 # ─── Старые/альтернативные URL → правильные ───
-/index         /                   301
-/home          /                   301
-/cookies       /cookie             301
+/index         /         301
+/home          /         301
+/cookies       /cookie   301
 
-# ─── Языковые пути ───
-/pl/           /                   301
-/en/           /?lang=en           302
-/ru/           /?lang=ru           302
-/en            /?lang=en           302
-/ru            /?lang=ru           302
+# ─── Языковые пути → главная (язык через JS, не URL) ───
+/pl/           /         301
+/pl            /         301
+/en/           /         301
+/en            /         301
+/ru/           /         301
+/ru            /         301
